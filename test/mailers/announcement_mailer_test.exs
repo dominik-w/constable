@@ -43,7 +43,7 @@ defmodule Constable.Mailers.AnnouncementTest do
     ]
     assert email.html_body =~ html_announcement_body
     assert email.html_body =~ author.name
-    assert email.html_body =~ Exgravatar.generate(author.email)
+    assert email.html_body =~ Exgravatar.gravatar_url(author.email)
     assert email.html_body =~ interest_1.name
     assert email.html_body =~ interest_2.name
     assert email.text_body =~ announcement.body

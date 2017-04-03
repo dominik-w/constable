@@ -39,7 +39,7 @@ defmodule Constable.Mailers.CommentMailerTest do
     html_comment_body = Constable.Markdown.to_html(comment.body)
     assert email.html_body =~ html_comment_body
     assert email.html_body =~ author.name
-    assert email.html_body =~ Exgravatar.generate(author.email)
+    assert email.html_body =~ Exgravatar.gravatar_url(author.email)
 
     assert email.text_body =~ comment.body
   end
@@ -67,7 +67,7 @@ defmodule Constable.Mailers.CommentMailerTest do
     html_comment_body = Constable.Markdown.to_html(comment.body)
     assert email.html_body =~ html_comment_body
     assert email.html_body =~ author.name
-    assert email.html_body =~ Exgravatar.generate(author.email)
+    assert email.html_body =~ Exgravatar.gravatar_url(author.email)
 
     assert email.text_body =~ comment.body
   end

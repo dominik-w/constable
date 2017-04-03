@@ -12,7 +12,7 @@ defmodule Constable.SharedView do
   end
 
   def gravatar(user) do
-    Exgravatar.generate(user.email, %{}, true)
+    Exgravatar.gravatar_url(user.email, secure: true)
   end
 
   def time_ago_in_words(time) do

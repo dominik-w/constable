@@ -18,7 +18,7 @@ defmodule Constable.EmailView do
   end
 
   def author_avatar_url(user) do
-    Exgravatar.generate(user.email)
+    Exgravatar.gravatar_url(user.email)
   end
 
   def interest_links(announcement) do
