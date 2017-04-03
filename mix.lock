@@ -18,7 +18,7 @@
   "good_times": {:hex, :good_times, "1.1.1", "7faa76021165e97143b4d933800a886b7675903c80535aa616fc42b8860a47d2", [], []},
   "hackney": {:hex, :hackney, "1.6.5", "8c025ee397ac94a184b0743c73b33b96465e85f90a02e210e86df6cbafaa5065", [:rebar3], [{:certifi, "0.7.0", [hex: :certifi, optional: false]}, {:idna, "1.2.0", [hex: :idna, optional: false]}, {:metrics, "1.0.1", [hex: :metrics, optional: false]}, {:mimerl, "1.0.2", [hex: :mimerl, optional: false]}, {:ssl_verify_fun, "1.1.1", [hex: :ssl_verify_fun, optional: false]}]},
   "honeybadger": {:hex, :honeybadger, "0.6.1", "1d5311cbb379b2c92e7ba6951980f3160d1acb794385fc07025f6db48929780f", [:mix], [{:httpoison, "~> 0.9", [hex: :httpoison, optional: false]}, {:plug, ">= 0.13.0 and < 2.0.0", [hex: :plug, optional: false]}, {:poison, ">= 1.4.0 and < 3.0.0", [hex: :poison, optional: false]}]},
-  "html_sanitize_ex": {:hex, :html_sanitize_ex, "1.0.1", "2572e7122c78ab7e57b613e7c7f5e42bf9b3c25e430e32f23f1413d86db8a0af", [], [{:mochiweb, "~> 2.12.2", [hex: :mochiweb, optional: false]}]},
+  "html_sanitize_ex": {:hex, :html_sanitize_ex, "1.1.1", "f087f20a26b5461638121a8df8a9821fff0d6ead365307df791b50fe259ca23d", [:mix], [{:mochiweb, "~> 2.12.2", [hex: :mochiweb, optional: false]}]},
   "httpoison": {:git, "https://github.com/edgurgel/httpoison.git", "9c75517284904c0b863d796f15d2d94573727b3e", []},
   "idna": {:hex, :idna, "1.2.0", "ac62ee99da068f43c50dc69acf700e03a62a348360126260e87f2b54eced86b2", [:rebar3], []},
   "metrics": {:hex, :metrics, "1.0.1", "25f094dea2cda98213cecc3aeff09e940299d950904393b2a29d191c346a8486", [], []},
