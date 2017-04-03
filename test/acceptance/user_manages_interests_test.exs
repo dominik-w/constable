@@ -34,7 +34,7 @@ defmodule Constable.UserManagesInterestsTest do
 
     session
     |> visit(announcement_path(Endpoint, :index, as: user.id))
-    |> click(@view_all_interests_css)
+    |> click(Query.css(@view_all_interests_css))
   end
 
   defp subscribed_to_interest?(session) do
@@ -46,10 +46,10 @@ defmodule Constable.UserManagesInterestsTest do
   end
 
   defp subscribe_to_interest(session) do
-    session |> click(@subscribe_link_css)
+    session |> click(Query.css(@subscribe_link_css))
   end
 
   defp unsubscribe_from_interest(session) do
-    session |> click(@unsubscribe_link_css)
+    session |> click(Query.css(@unsubscribe_link_css))
   end
 end

@@ -8,7 +8,7 @@ defmodule Constable.NewCommentTest do
 
     session
     |> visit(announcement_path(Endpoint, :show, announcement, as: user.id))
-    |> fill_in("comment_body", with: "My Cool Comment")
+    |> fill_in(Query.text_field("comment_body"), with: "My Cool Comment")
     |> submit_comment
 
     other_session
@@ -20,11 +20,12 @@ defmodule Constable.NewCommentTest do
 
   defp submit_comment(session) do
     session
-    |> find("#submit-comment")
-    |> click
+    |> click(Query.css("#submit-comment"))
   end
 
   defp has_comment_text?(session, comment_text) do
-    find(session, ".comments-list") |> has_text?(comment_text)
+    session
+    |> find(Query.css(".comments-list"))
+    |> has_text?(comment_text)
   end
 end
